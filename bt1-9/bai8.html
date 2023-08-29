@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let number = [];
+            let add;
+            do {
+                add = +prompt("nhập số");//0 thì kết thúc
+                if (add !== 0) {
+                    number.push(add);
+                }
+            } while (add !== 0);
+            let change = number.sort(function (a, b) {
+                return b - a;
+            });
+            console.log(change.toString());
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let number = [];
+            let a;
+            do {
+                a = +prompt("mời nhập số");
+                number.push(a);
+            } while (a !== 0);
+            let count = 0;
+            for (let i = 0; i < number.length; i++) {
+                if (number[i] < 0) {
+                    count++;
+                }
+            }
+            alert(` ${count} là số nguyên âm`);
+    </script>
+</body>
+</html>
